@@ -133,9 +133,7 @@ AURA creates a protocol where:
 
 The similarity score **S** between a Shopper's Vibe **Vs** and a Product's Vibe **Vp** uses L2 Euclidean distance:
 
-```
-S(Vs, Vp) = 1 / (1 + sqrt(sum((Vs_i - Vp_i)^2)))
-```
+$$S(V_s, V_p) = \frac{1}{1 + \sqrt{\sum_{i=1}^{n} (V_{s,i} - V_{p,i})^2}}$$
 
 ### Match Thresholds
 
