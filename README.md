@@ -23,25 +23,25 @@
 ```mermaid
 graph LR
     subgraph "STEP 1: SHOPPER QUERY"
-        U[Emotional Prompt<br/>"CEO who codes at night"] --> V[Vibe Embedding<br/>8-Axis Vector]
-        V --> Q[AURA_QUERY<br/>Target Vibe + Budget]
+        U["Emotional Prompt<br/>'CEO who codes at night'"] --> V["Vibe Embedding<br/>8-Axis Vector"]
+        V --> Q["AURA_QUERY<br/>Target Vibe + Budget"]
     end
     
     subgraph "STEP 2: BOUTIQUE PROCESSING"
-        Q --> B[Boutique Agent<br/>Manifold Analysis]
-        B --> T[Vibe Transformations<br/>Axis Adjustments]
-        T --> O[AURA_OFFER<br/>Option A + B]
+        Q --> B["Boutique Agent<br/>Manifold Analysis"]
+        B --> T["Vibe Transformations<br/>Axis Adjustments"]
+        T --> O["AURA_OFFER<br/>Option A + B"]
     end
     
     subgraph "STEP 3: AUTONOMOUS DECISION"
-        O --> E[Shopper Evaluates<br/>Match vs Mandate]
+        O --> E["Shopper Evaluates<br/>Match vs Mandate"]
         E --> D{Valid Offer?}
-        D -->|Yes| A[AURA_ACCEPT<br/>Bundle Selected]
-        D -->|No| R[AURA_REJECT<br/>Would Accept If...]
+        D -->|Yes| A["AURA_ACCEPT<br/>Bundle Selected"]
+        D -->|No| R["AURA_REJECT<br/>Would Accept If..."]
     end
     
     subgraph "STEP 4: VIBE RECEIPT"
-        A --> VR[Cryptographic Receipt<br/>Transcript Hash]
+        A --> VR["Cryptographic Receipt<br/>Transcript Hash"]
     end
 
     style U fill:#e1f5ff
